@@ -1,25 +1,22 @@
-var k=5;
-k = parseInt(k)
+var a=5;
+a = parseInt(a)
 function SF4() {
-
-    var suma=0;
-    var resultadoPotencia=0;
+    var sum=0;
+    var resPot=0;
     for (i = 1; i < 11; i++) {  
-        
-        resultadoPotencia=Math.pow(i,k);
-        suma+=resultadoPotencia;
-        suma = parseInt(suma);        
+        resPot=Math.pow(i,a);
+        sum+=resPot;
+        sum = parseInt(sum);        
     }
-    console.log("Resultado 1: "+suma);
+    console.log("Resultado 1: "+sum);
+}
+function SF4f(){
+    var res=0;
+    for(n=1;n<11;n++){
+        resultado=(1/(a+1)*(Math.pow(n,a+1)));   
+    }
+    console.log("Resultado 2: "+res);
 }
 
-function SF4f(){
-    var resultado=0;
-    for(n=1;n<11;n++){
-        resultado=(1/(k+1)*(Math.pow(n,k+1)));
-        
-    }
-    console.log("Resultado 2: "+resultado);
-}
 SF4();
 SF4f();
