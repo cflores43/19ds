@@ -1,25 +1,20 @@
 function conv (n,r) {
-	var total = 1; 
+	var tot = 1; 
 	for (i=1; i<=n; i++) {
-        total = total * i; 
-        
+        tot = tot * i;         
     }
-    
-    let suma = n - r
-    
-    let total2 = 1;
-    for (i=1; i<=suma; i++) {
-        total2 = total2 * i; 
+    let sum = n - r
+    let tot2 = 1;
+    for (i=1; i<=sum; i++) {
+        tot2 = tot2 * i; 
     }
-    let total3 = 1;
+    let tot3 = 1;
     for (i=1; i<=r; i++) {
-        total3 = total3 * i; 
+        tot3 = tot3 * i; 
     }
-    let formula = total/total2
-
-    let formula2 = formula / total3
-    
-    return formula2
+    let form1 = tot/tot2
+    let form2 = form1 / tot3    
+    return form2
 
 }
 
