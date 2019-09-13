@@ -13,4 +13,5 @@ function howMany(x){
     }
     return igl;
 }
-howMany(array);
+
+console.log(howMany(array));
