@@ -1,5 +1,4 @@
 var array = [3,2,1];
-
 function howMany(x){
     var x = x.sort(function(a, b){return a-b});
     var igl = 0;
@@ -13,5 +12,4 @@ function howMany(x){
     }
     return igl;
 }
-
-console.log(howMany(array));
+howMany(array);
