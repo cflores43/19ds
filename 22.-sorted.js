@@ -1,36 +1,36 @@
-
-//ordenar valores
-
+//Este programa es del dia que estube enferma y aclaro que estaba mal pero no me lo explicaron ya
+//Este programa cuenta valores de una array y los ordena ordena
 //Sin valores iguales
-var array = [6, 2, 20, 15, 7]
-var array2 = [6, 2, 20, 15, 7]
-console.log(array)
-for(c = 0 ; c<array.length ; c++){
-    var menores = 0;
-    for(c2= 0; c2<array.length; c2++){
-       if(array[c]>array[c2])menores++
-    }
-     array2[menores] = array[c];
-}
-console.log(array2)
 
+var arrayA = [6, 2, 20, 15, 7]
+var arrayB = [6, 2, 20, 15, 7]
+console.log(arrayA)
+for(c = 0 ; c<arrayA.length ; c++){
+    var men = 0;
+    for(c2= 0; c2<arrayA.length; c2++){
+       if(arrayA[c]>arrayA[c2])men++
+    }
+     arrayB[men] = arrayA[c];
+}
+console.log(arrayB)
 
 //Con valores iguales 
+
 var array = [6, 7, 20, 7, 2]
-var array2 = [6, 7, 20, 7, 2]
+var arrayB = [6, 7, 20, 7, 2]
 console.log(array)
 for(c = 0 ; c<array.length ; c++){
-    var menores = 0;
-    var iguales = -1;
+    var men = 0;
+    var igl = -1;
     for(c2= 0; c2<array.length; c2++){
-       if(array[c]>array[c2])menores++
-       if(array[c]==array[c2])iguales++
+       if(array[c]>array[c2])men++
+       if(array[c]==array[c2])igl++
     }
-    if(iguales != 0){
-        for(i = iguales; i !=0; i--){
-            array2[(menores+i)] = array[c];
+    if(igl != 0){
+        for(i = igl; i !=0; i--){
+            arrayB[(men+i)] = array[c];
         }
     }
-    array2[menores] = array[c];
+    arrayB[men] = array[c];
 }
-console.log(array2)
+console.log(arrayB)
