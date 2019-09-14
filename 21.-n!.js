@@ -1,10 +1,10 @@
-function fac (n)
+function fac (x)
 {
-	var total = 1; 
-    for (i=1; i<=n; i++)
+	var tot = 1; 
+    for (i=1; i<=x; i++)
      {
-        total = total * i;    
+        tot = tot * i;    
     }
-    return total
+    return tot
 }   
 console.log(fac(10))
