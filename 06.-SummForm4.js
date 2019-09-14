@@ -13,7 +13,7 @@ function SF4() {
 function SF4f(){
     var res=0;
     for(n=1;n<11;n++){
-        resultado=(1/(a+1)*(Math.pow(n,a+1)));   
+        res=(1/(a+1)*(Math.pow(n,a+1)));   
     }
     console.log("Resultado 2: "+res);
 }
