@@ -1,21 +1,22 @@
-//Primos
+//Numeros primos
 
+let a = prompt("Pon un limite para los numeros primos quieres ver")
+let x = parseInt(a)
 function prim(x){
-    var af = false;
-    for(c=x-1;c>1;c--){
-        if(x%c==0) af = true;
+    for (n=3;n<x;n++){
+     s=Math.sqrt(n);
+     noFactorSoFar = true;
+      for (f=2;f<=s;f++){
+       r = n % f;
+       if (r==0){
+          noFactorSoFar = false;
+          break;
+       }
+      }
+      if (noFactorSoFar){
+        console.log(n)
+        console.log("<br/>");
+      }
     }
-    if(af == true || x <= 1) return false;
-    else return true;
 }
-
-function cuantPrim(ene){
-    for(c1=0;c1<=ene;c1++){
-        if(prim(c1)==false)c--;
-        else console.log(c1)
-    }
-    do{
-        
-        if(prim(c1)==true)console.log(c1)
-    }while(c<=5)
-}
+  prim(x);
