@@ -1,20 +1,22 @@
-function fact (n,r)
- {
-	var total = 1; 
-    for (i=1; i<=n; i++)
-     {
-        total = total * i;     
-    }
-    let suma = n - r
-    
-    let total2 = 1;
-    for (i=1; i<=suma; i++)
-     {
-        total2 = total2 * i; 
-    }
-    let form = total/total2
+let a = prompt("Introduce un numero para x")
+let x = parseInt(a)
+let b = prompt("Introduce un numero para y")
+let y = parseInt(b)
+
+function fact (x,y){
+	var tot = 1; 
+	    for (i=1; i<=x; i++){
+		total = tot * i;     
+	    }
+	
+	    let sum = x - y
+	    let tot2 = 1;
+	    for (i=1; i<=sum; i++){
+		tot2 = tot2 * i; 
+	    }
+
+    let form = tot/tot2
 	return form; 
 }
 
-
-console.log(`El resultado 1>${fact(10,3)}`
+console.log("El resultado 1 > " + fact(x,y))
