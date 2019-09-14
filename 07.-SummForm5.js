@@ -1,21 +1,21 @@
-var a =1;
-a = parseInt(a);
-if(a!=1){
-    function SF5() {
-        var sum = 0;
-        for (n = 0; n < 11; n++) {
-            sum += Math.pow(a, n);
-        }
-        console.log("Resultado 1: "+sum);
+var a=5;
+a=parseInt(a);
+sum=1;
+var sum=parseInt(sum);
+sumEx=0;
+sumEx=parseInt(sumEx);
+var form=0;
+form=parseInt(form);
+var aprox=0;
+aprox=parseInt(aprox);
+
+
+    for(n=1;n<11;n++){
+        sumEx=Math.pow(a,n);
+        sum+=sumEx;
+        form=((Math.pow(a,n+1)-1)/(a-1));
+        aprox=(Math.pow(2,n+1)-1);
     }
-    function SF5f() {
-        var result = 0;
-        for (n = 0; n < 11; n++) {
-            result = Math.pow(a,(n+1))-1/(a-1);
-        }
-        console.log("Resultado 2: "+result);
-    }
-    
-    SF5();
-    SF5f();
-}
+    console.log("Result 1: "+sum);
+    console.log("Result 2: "+form);
+    console.log("Aprox: "+aprox);
