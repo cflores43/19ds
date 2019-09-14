@@ -1,4 +1,4 @@
-array = [1,2,3,4,5,6,4,7,8,9,10]
+array = [1,2,3,4,5,6,4,7,8,9,1]
 
 function rep(re){
 	let sRep = false;
@@ -13,6 +13,5 @@ function rep(re){
 	return sRep
 	console.log(sRep)
 }
-
-console.log(array + "\n se repite?")
-console.log(repite(array))
+console.log("En " + array + "\n se repite algun valor??")
+console.log(rep(array))
