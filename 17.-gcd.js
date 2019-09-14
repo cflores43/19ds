@@ -1,4 +1,9 @@
-function gcd_two_numbers(x, y) {
+var a = prompt(`Introduce un numero para x`)
+let x = parseInt(a) 
+var b = prompt(`Introduce un numero para y`)
+let y = parseInt(b)
+
+function gcd2num(x, y) {
     if ((typeof x !== 'number') || (typeof y !== 'number')) 
       return false;
 
@@ -12,5 +17,4 @@ function gcd_two_numbers(x, y) {
     }
     return x;
   }
-  
-  console.log(gcd_two_numbers(5,3));
+gcd2num(x,y)
